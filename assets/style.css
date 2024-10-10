@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #013456;
+    --accent-color: #FAD405;
+}
+
+@font-face {
+    font-family: 'Istok web';
+    src: url(./fonts/Istok_Web/IstokWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Istok web';
+    src: url(./fonts/Istok_Web/IstokWeb-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-Light.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1231px;
+    margin: 0 auto;
+    margin-top: 81px;
+    font-family: 'Istok web';
+}
+
+.header_title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 58px;
+}
+
+.header_title span {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.header_title .plane-ico {
+    color: var(--accent-color);
+}
+
+
+.header .close-ico, 
+.header .menu-ico {
+    display: none
+}
+
+.header_navigation {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    margin-right: 12px;
+}
+
+.header_navigation a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 36px;
+    margin-left: 29px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper aside {
+    width: 50%;
+    margin-top: 46px;
+    position: relative;
+}
+
+.book_circle {
+    width: 785px;
+    height: 785px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book {
+    height: 785px;
+    margin-bottom: 54px;
+}
+
+main {
+    width: 50%;
+    margin-top: 91px;
+    max-width: 571px;
+}
+
+main h1 {
+    color: var(--primary-color);
+    font-family: 'Poppings';
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+main p {
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
