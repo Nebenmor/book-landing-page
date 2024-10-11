@@ -53,11 +53,10 @@
 .header_title .plane-ico {
     color: var(--accent-color);
 }
-
-
-.header .close-ico, 
-.header .menu-ico {
-    display: none
+ 
+.header .menu-ico,
+.header .close-ico {
+    display: none;
 }
 
 .header_navigation {
@@ -150,4 +149,94 @@ main p {
     font-family: 'Poppins';
     font-size: 32px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 1400px) {
+    header {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .header_navigation {
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+    }
+
+    .header_navigation a {
+        color: var(--accent-color);
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .header .menu-ico {
+        display: block;
+        font-size: 30px;
+        line-height: 45px;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .header .close-ico {
+        display: none;
+        z-index: 1;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper aside,
+    .wrapper main {
+        width: 90%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .book_circle img {
+        max-width: 150px;
+    }
+
+    .book_circle {
+        position: initial;
+        max-width: 300px;
+        max-height: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .book {
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    .buttons_buy-now, 
+    .buttons_read-more {
+        font-size: 16px;
+    }
+
+    .buttons button {
+        padding: 16px 25px;
+    }
 }
